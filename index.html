@@ -5,15 +5,21 @@
 	    <title>소리지르는 비버</title>
 	<style>
         #logo {
-         position: absolute;
+         position: relative;
 	     left:10;	
 		}
         #logo2 {
-		 position: absolute;	
+		 position: relative;	
 	     right:0;	
 		}         
 	    #title { margin-left: auto; margin-right: auto;}
+		.header { background-color: mintcream; border-bottom: 1px solid gray;}
+        #news { position: absolute; right: 4%; bottom: 0;}
+        #v-log { position: absolute; right: 4%}
+		#v { position: relative; bottom: 300px;}
+        #n { position: relative; bottom: 300px;}
         
+
         #title:link { text-decoration: none; color:black}
         #title:visited {text-decoration: none; color:black}
         #title:active {text-decoration:none; color:black}
@@ -22,29 +28,37 @@
         #self-ad {position: relative;
                     float:left;}
       
-        #newspaper {position: relative;
-                    float:left;}
+        #newspaper {position: absolute;
+                    left: 0; bottom: 325px}
 
 	    #newspaper:link {text-decoration: none; color:black}
         #newspaper:visited {text-decoration: none; color:black}
         #newspaper:active {text-decoration:none; color:black}
         #newspaper:hover {text-decoration:underline; color:black}
+		#newspaper-site { position: absolute; left: 0; bottom: 0;}
+		#color { background-color: palevioletred;}
+		#세로줄시발 { border-left-width: 0.5em solid #FFFFF; padding: 0.5em;}
     </style>
 	</head>
-	<body>
+	<body id="color">
 		<div class="header">
 			<img id="logo" class="header" src="로고" alt="로고" />
 			<a id="title" class="header" href="https://timdoma.github.io/Daeshin_1-10_HomePage/"  target="_self">대신고등학교 1학년 10반</a>
 			<img id="logo2" class="header "src="대신고 마크" alt="대신고 마크">
 			</div>
+
+			<div id="세로줄시발">
 			<div  id="self-ad">대신고 1-10 유튜브 바로가기</div>
 			<div id="v-log">
-			    <span>Vlog</span>
+			    <span id="v">Vlog</span>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/n40_fosrDmw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
-			<div><a id="newspaper" href="https://timdoma.gitbook.io/biver/">newspaper</a></div>
-			<div id="news"><span>news</span>
+			<div><a id="newspaper" href="https://timdoma.gitbook.io/biver/">newspaper</a>
+			<iframe id="newspaper-site" width="560" height="315" src="https://timdoma.gitbook.io/biver/3" frameborder="0" scrolling="yes"></iframe>
+			</div>
+			<div id="news"><span id="n">news</span>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/n-de_k-XrHI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 			</div>
 		</body>
 	</html>
